@@ -1,0 +1,38 @@
+{
+  "name": "genpark-multi-agent-task-auction-bidding-orchestrator-skill",
+  "version": "1.0.0",
+  "description": "GenPark AI Agent Skill - Market-based decentralized multi-agent task auction and bidding orchestrator matching complex work items to specialized agent nodes.",
+  "author": "genpark",
+  "category": "agents",
+  "tags": [
+    "multi-agent",
+    "task-auction",
+    "market-allocation",
+    "bidding-engine",
+    "agent-orchestration"
+  ],
+  "inputs": {
+    "task_spec": {
+      "type": "object"
+    },
+    "registered_agents": {
+      "type": "array"
+    }
+  },
+  "outputs": {
+    "winning_agent": {
+      "type": "string"
+    },
+    "auction_status": {
+      "type": "string"
+    },
+    "bids_received": {
+      "type": "array"
+    },
+    "auction_latency_ms": {
+      "type": "number"
+    }
+  },
+  "entrypoint": "client.py",
+  "example": "example_usage.py"
+}
